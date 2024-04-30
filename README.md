@@ -1,1 +1,1 @@
-# ESP32-Smart-Home
+# ESP32 Smart Home
