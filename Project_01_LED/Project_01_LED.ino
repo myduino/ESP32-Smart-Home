@@ -1,4 +1,4 @@
-#define led_y 12  //Define the yellow led pin to 12
+#define led_y 13  //Define the yellow led pin to 12
 
 void setup() {    //The code inside the setup function runs only once
   pinMode(led_y, OUTPUT);  //Set pin to output mode
