@@ -6,7 +6,7 @@ void setup() {
 
 void loop() {
   // For loop statement increments the value of
-  // brightness variable from 0 to 255, by +1 and
+  // brightness variable from 0 to 255, by +1 and then
   // once the value reached 255 it exits the loop
   for (int brightness = 0; brightness < 255; brightness++) {
     // PWM output controls the brightness of the LED
