@@ -1,3 +1,4 @@
+// Define the frequencies of the musical notes
 const int c = 261;
 const int d = 294;
 const int e = 329;
@@ -17,114 +18,127 @@ const int fSH = 740;
 const int gH = 784;
 const int gSH = 830;
 const int aH = 880;
- 
+
+// Define pin assignments for buzzer and LEDs
 const int buzzerPin = 25;
 const int ledPin1 = 12;
 const int ledPin2 = 13;
- 
-int counter = 0;
- 
+
+// Variable to keep track of LED blinking pattern
+int counter = 0; 
+
 void setup()
 {
-  //Setup pin modes
+  // Set pin modes for buzzer and LEDs
   pinMode(buzzerPin, OUTPUT);
   pinMode(ledPin1, OUTPUT);
   pinMode(ledPin2, OUTPUT);
 }
- 
+
 void loop()
 {
- 
-  //Play first section
+
+  // Play the first section of the melody
   firstSection();
- 
-  //Play second section
+
+  // Play the second section of the melody
   secondSection();
- 
-  //Variant 1
-  beep(f, 250);  
-  beep(gS, 500);  
-  beep(f, 350);  
+
+  // Variant 1: Custom melody variation
+  beep(f, 250);
+  beep(gS, 500);
+  beep(f, 350);
   beep(a, 125);
   beep(cH, 500);
-  beep(a, 375);  
+  beep(a, 375);
   beep(cH, 125);
   beep(eH, 650);
- 
+
+  // Delay between melody variations
   delay(500);
- 
-  //Repeat second section
+
+  // Repeat the second section of the melody
   secondSection();
- 
-  //Variant 2
-  beep(f, 250);  
-  beep(gS, 500);  
-  beep(f, 375);  
+
+  // Variant 2: Custom melody variation
+  beep(f, 250);
+  beep(gS, 500);
+  beep(f, 375);
   beep(cH, 125);
-  beep(a, 500);  
-  beep(f, 375);  
+  beep(a, 500);
+  beep(f, 375);
   beep(cH, 125);
-  beep(a, 650);  
- 
+  beep(a, 650);
+
+  // Delay after the second melody variation
   delay(650);
 }
- 
+
+// Function to play a note with LED blinking
 void beep(int note, int duration)
 {
-  //Play tone on buzzerPin
+  // Play tone on the buzzer
   tone(buzzerPin, note, duration);
- 
-  //Play different LED depending on value of 'counter'
-  if(counter % 2 == 0)
+
+  // Toggle between two LEDs based on the counter value
+  if (counter % 2 == 0)
   {
     digitalWrite(ledPin1, HIGH);
     delay(duration);
     digitalWrite(ledPin1, LOW);
-  }else
+  }
+  else
   {
     digitalWrite(ledPin2, HIGH);
     delay(duration);
     digitalWrite(ledPin2, LOW);
   }
- 
-  //Stop tone on buzzerPin
+
+  // Stop tone on the buzzer
   noTone(buzzerPin);
- 
+
+  // Delay between notes
   delay(50);
- 
-  //Increment counter
+
+  // Increment the counter for LED blinking pattern
   counter++;
 }
- 
+
+// Function to play the first section of the melody
 void firstSection()
 {
+  // Play the first section of the melody
   beep(a, 500);
-  beep(a, 500);    
+  beep(a, 500);
   beep(a, 500);
   beep(f, 350);
-  beep(cH, 150);  
+  beep(cH, 150);
   beep(a, 500);
   beep(f, 350);
   beep(cH, 150);
   beep(a, 650);
- 
+
+  // Delay between sections
   delay(500);
- 
+
   beep(eH, 500);
   beep(eH, 500);
-  beep(eH, 500);  
+  beep(eH, 500);
   beep(fH, 350);
   beep(cH, 150);
   beep(gS, 500);
   beep(f, 350);
   beep(cH, 150);
   beep(a, 650);
- 
+
+  // Delay between sections
   delay(500);
 }
- 
+
+// Function to play the second section of the melody
 void secondSection()
 {
+  // Play the second section of the melody
   beep(aH, 500);
   beep(a, 300);
   beep(a, 150);
@@ -132,18 +146,20 @@ void secondSection()
   beep(gSH, 325);
   beep(gH, 175);
   beep(fSH, 125);
-  beep(fH, 125);    
+  beep(fH, 125);
   beep(fSH, 250);
- 
+
+  // Delay between sections
   delay(325);
- 
+
   beep(aS, 250);
   beep(dSH, 500);
-  beep(dH, 325);  
-  beep(cSH, 175);  
-  beep(cH, 125);  
-  beep(b, 125);  
-  beep(cH, 250);  
- 
-delay(350);
+  beep(dH, 325);
+  beep(cSH, 175);
+  beep(cH, 125);
+  beep(b, 125);
+  beep(cH, 250);
+
+  // Delay between sections
+  delay(350);
 }
