@@ -1,5 +1,5 @@
 // Define the led pin to 12
-#define led 13
+#define led 12
 
 // The setup function to run each code once
 // from top to bottom within the setup function,
