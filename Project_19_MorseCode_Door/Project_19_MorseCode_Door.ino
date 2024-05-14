@@ -23,7 +23,7 @@ OneButton button2(27, true);
 // Initialize an empty string for the password
 // Define the correct password for the door
 Servo myservo;  
-int servoPin = 5;  
+int servoPin = 13;  
 String password = "";  
 String correct_p = "-.-";  
 
