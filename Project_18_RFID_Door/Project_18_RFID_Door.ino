@@ -24,7 +24,7 @@ MFRC522 mfrc522(0x28);
 // Define pin 13 for the servo
 // Define pin 16 for the button
 // Initialize button flag
-#define servoPin  5  
+#define servoPin  13  
 #define btnPin 16  
 boolean btnFlag = 0;  
 
