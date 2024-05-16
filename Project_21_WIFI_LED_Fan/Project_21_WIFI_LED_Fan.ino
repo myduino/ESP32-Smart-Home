@@ -22,7 +22,7 @@ LiquidCrystal_I2C mylcd(0x27, 16, 2);
 // Define the yellow LED pin to 12
 #define fanPin1 19  
 #define fanPin2 18  
-#define led_y 12  
+#define led 12  
 
 void setup() {
   // Start serial communication at 115200 baud
@@ -34,7 +34,7 @@ void setup() {
   Serial.begin(115200);  
   mylcd.init();  
   mylcd.backlight();  
-  pinMode(led_y, OUTPUT);  
+  pinMode(led, OUTPUT);  
   pinMode(fanPin1, OUTPUT);  
   pinMode(fanPin2, OUTPUT);  
   
@@ -128,14 +128,14 @@ void loop() {
   // Send a response to turn on the LED
   // Turn on the yellow LED
   client.println("turn on the LED");  
-  digitalWrite(led_y, HIGH);  
+  digitalWrite(led, HIGH);  
 }
   // If the requested path is "/led/off"
   if (req == "/led/off") {  
   // Send a response to turn off the LED
   // Turn off the yellow LED
   client.println("turn off the LED");  
-  digitalWrite(led_y, LOW);  
+  digitalWrite(led, LOW);  
 }
   // If the requested path is "/fan/on"
   if (req == "/fan/on") {  
