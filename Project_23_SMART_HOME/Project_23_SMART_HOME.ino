@@ -562,7 +562,7 @@ void birthday()
 
 void colorWipe(uint32_t color, int wait) {
   //  For each pixel in strip...
-  //  Set pixel's color (in RAM)
+  //  Set pixel color (in RAM)
   //  Update strip to match
   //  Pause for a moment
   for(int i=0; i<strip.numPixels(); i++) { 
