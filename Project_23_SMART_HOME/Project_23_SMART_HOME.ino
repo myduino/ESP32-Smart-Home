@@ -12,7 +12,7 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 // Global variable to store the item requested
 String item = "0";
-// WiFi credentials (insert WiFi ssid and WiFi password)
+// WiFi credentials (Insert WiFi ssid and WiFi password)
 const char* ssid = "myinvententerprise";
 const char* password = "04222682";
 // Create a WiFiServer object to listen on port 80
