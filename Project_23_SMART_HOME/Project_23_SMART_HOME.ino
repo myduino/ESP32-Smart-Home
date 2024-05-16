@@ -35,7 +35,7 @@ xht11 xht(17);
 #define waterPin 34
 #define fanPin1 19
 #define fanPin2 18
-#define led_y 12  //Define the led pin to 12
+#define led 12  //Define the led pin to 12
 
 #define waterPin 34
 #define gasPin 23
@@ -183,7 +183,7 @@ void loop() {
     // Send response to client
     // Turn on the LED
     client.println("turn on the LED");
-    digitalWrite(led_y, HIGH);
+    digitalWrite(led, HIGH);
   }
   // Check if the request is to turn off the LED
   if(req == "/led/off") // Browser accesses address ip address/led/off
@@ -191,7 +191,7 @@ void loop() {
     // Send response to client
     // Turn off the LED
     client.println("turn off the LED");
-    digitalWrite(led_y, LOW);
+    digitalWrite(led, LOW);
   }
   if(req == "/window/on")
   {
