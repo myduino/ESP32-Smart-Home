@@ -9,12 +9,12 @@ making the relevant knowledge of the Internet more accessible to you.
 
 # **Features**
 
-1.Elegant appearance
-2.A host of sensor modules
-3.Mobile phone APP network control
-4.Morse password door
-5.It can automatically close windows
-6.RFID function
+1. Elegant appearance
+2. A host of sensor modules
+3. Mobile phone APP network control
+4. Morse password door
+5. It can automatically close windows
+6. RFID function
 
 # **Project**
 
