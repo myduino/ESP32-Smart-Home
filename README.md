@@ -18,28 +18,28 @@ making the relevant knowledge of the Internet more accessible to you.
 
 # **Project**
 
-Project 1: Control LED
-Project 2: LED Breathing
-Project 3: Pushbutton
-Project 4: LED Pushbutton
-Project 5: Motion Sensor
-Project 6: LED Motion Sensor
-Project 7: Buzzer
-Project 8: Buzzer Music
-Project 9: Servo Door
-Project 10: Servo Auto Window
-Project 11: SK6812 RGB
-Project 12: SK6812 RGB Pushbutton
-Project 13: Fan
-Project 14: Fan Button
-Project 15: LCD
-Project 16: Dangerous Gas LCD
-Project 17: Temperature & Humidity
-Project 18: RFID Door
-Project 19: Morse Code Open the Door
-Project 20: WiFi Test
-Project 21: WiFi LED Fan (browser)
-Project 22: Application Test (mobile phone app)
-Project 23: SMART HOME (mobile phone app)
+-Project 1: Control LED
+-Project 2: LED Breathing
+-Project 3: Pushbutton
+-Project 4: LED Pushbutton
+-Project 5: Motion Sensor
+-Project 6: LED Motion Sensor
+-Project 7: Buzzer
+-Project 8: Buzzer Music
+-Project 9: Servo Door
+-Project 10: Servo Auto Window
+-Project 11: SK6812 RGB
+-Project 12: SK6812 RGB Pushbutton
+-Project 13: Fan
+-Project 14: Fan Button
+-Project 15: LCD
+-Project 16: Dangerous Gas LCD
+-Project 17: Temperature & Humidity
+-Project 18: RFID Door
+-Project 19: Morse Code Open the Door
+-Project 20: WiFi Test
+-Project 21: WiFi LED Fan (browser)
+-Project 22: Application Test (mobile phone app)
+-Project 23: SMART HOME (mobile phone app)
 
 
