@@ -80,7 +80,7 @@ void beep(int note, int duration)
   // Play tone on the buzzer
   tone(buzzerPin, note, duration);
 
-  // Toggle between two LEDs based on the counter value
+  // Toggle between two LED based on the counter value
   if (counter % 2 == 0)
   {
     digitalWrite(ledPin1, HIGH);
