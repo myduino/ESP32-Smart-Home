@@ -5,7 +5,6 @@
 #include <Adafruit_NeoPixel.h>
 // Define the led pin
 #define LED_PIN 26
-// How many NeoPixels are attached to the Arduino?
 #define LED_COUNT 4
 // Declare our NeoPixel strip object:
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
@@ -249,7 +248,7 @@ if(req == "/buz/off")
 {
   // Send message to client indicating door is opening
   // Set PWM value to open the door (assumed)
-  //Dservo.write(180); // Uncomment this line if using a servo to open the door
+  // Dservo.write(180); // Uncomment this line if using a servo to open the door
   client.println("open the door"); 
   ledcWrite(channel_PWM2, 120); 
   
@@ -259,7 +258,7 @@ if(req == "/door/off")
 {
   // Send message to client indicating door is closing
   // Set PWM value to close the door (assumed)
-  //Dservo.write(0); // Uncomment this line if using a servo to close the door
+  // Dservo.write(0); // Uncomment this line if using a servo to close the door
   client.println("close the door"); 
   ledcWrite(channel_PWM2, 20); 
   
@@ -490,19 +489,19 @@ if(req == "/white/off")
 
   if(req == "/temp/on")
   {
-      //Returns true when checked correctly
+      // Returns true when checked correctly
       if (xht.receive(dht)) { 
       Serial.print("Temp:");
-      //The integral part of temperature, DHT [3] is the fractional part
+      // The integral part of temperature, DHT [3] is the fractional part
       Serial.print(dht[2]); 
       Serial.println("C");
       delay(200);
     } else {  
-      //Read error
+      // Read error
       Serial.println("sensor error");
     }
     client.println(dht[2]);
-    delay(1000);  //It takes 1000ms to wait for the device to read
+    delay(1000);  // It takes 1000ms to wait for the device to read
   }
   if(req == "/temp/off")
   {
@@ -510,10 +509,10 @@ if(req == "/white/off")
   }
   if(req == "/humidity/on")
   {
-      //Returns true when checked correctly
+      // Returns true when checked correctly
       if (xht.receive(dht)) { 
       Serial.print("Temp:");
-      //The integral part of temperature, DHT [3] is the fractional part
+      // The integral part of temperature, DHT [3] is the fractional part
       Serial.print(dht[0]); 
       Serial.println("%");
       delay(200);
@@ -521,7 +520,7 @@ if(req == "/white/off")
       Serial.println("sensor error");
     }
     client.println(dht[0]);
-    //It takes 1000ms to wait for the device to read
+    // It takes 1000ms to wait for the device to read
     delay(1000);  
   }
   if(req == "/humidity/off")
@@ -530,13 +529,13 @@ if(req == "/white/off")
   }
 
   
-  //client.stop();
-}
+  // client.stop();
+} 
 
 
 void birthday()
 {
-  tone(buzzer_pin,294,250,0);  //The four parameters are pin, frequency, delay and channel 
+  tone(buzzer_pin,294,250,0);  // The four parameters are pin, frequency, delay and channel 
   tone(buzzer_pin,440,250,0);
   tone(buzzer_pin,392,250,0);
   tone(buzzer_pin,532,250,0);
