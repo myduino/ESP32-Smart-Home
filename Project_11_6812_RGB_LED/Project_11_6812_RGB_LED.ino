@@ -1,4 +1,4 @@
-// please installed all the library that been used in this file
+// please install all the library that been used in this file
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
 // Required for 16 MHz Adafruit Trinket
