@@ -1,5 +1,5 @@
 # ESP32 Smart Home
-As the rapid development of the Internet grows, various intelligent devices are gradually integrated into our daily life.
+- As the rapid development of the Internet grows, various intelligent devices are gradually integrated into our daily life.
 For example, we can use RFID to open the door. In addition, the kitchen is equipped with a gas detection alarm, 
 which alerts people to the danger when dangerous gas and large smoke are detected. 
 When it detects rain, it can automatically collect clothes and close windows. 
