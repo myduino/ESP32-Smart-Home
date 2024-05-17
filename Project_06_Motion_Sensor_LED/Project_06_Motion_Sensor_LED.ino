@@ -1,5 +1,5 @@
 // Define the pin for the Pyroelectric Sensor as pin 14
-// Define the pin for the Yellow LED as pin 12
+// Define the pin for the LED as pin 12
 #define pyroelectric 14
 #define led 12  
 
@@ -28,11 +28,11 @@ void loop() {
   
   // Check the state of the Pyroelectric Sensor
   if (pyroelectric_val == HIGH) {
-    // If sensor detects motion, turn on the Yellow LED
+    // If sensor detects motion, turn on the LED
     digitalWrite(led, HIGH);
   } else {
     // If sensor does not detect motion, 
-    // turn off the Yellow LED
+    // turn off the LED
     digitalWrite(led, LOW);
   }
 }
