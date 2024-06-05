@@ -3,7 +3,7 @@
 #include <ESPmDNS.h>
 #include <WiFiClient.h>
 #include <Adafruit_NeoPixel.h>
-// Define the led pin
+// Define the led pin and led count
 #define LED_PIN 26
 #define LED_COUNT 4
 // Declare our NeoPixel strip object:
